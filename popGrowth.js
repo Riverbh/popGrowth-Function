@@ -1,10 +1,9 @@
 function nbYear(p0, percent, aug, p){
-    let n = 0
     let percentInt = percent * .01
+    let n = 0
     while(p0 < p){
-        let p00 = (p0+p0*percentInt+aug)
-        p0 = p00
-        n++ 
+     p0 = p0+p0*percentInt+aug
+       n++
     }
     return n
 }
